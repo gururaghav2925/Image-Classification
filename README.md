@@ -4,7 +4,11 @@
 
 To Develop a convolutional deep neural network for image classification and to verify the response for new images.
 
-## Problem Statement and Dataset
+## Problem Statement
+
+The goal of this project is to develop a Convolutional Neural Network (CNN) for image classification using the MNIST dataset. The MNIST dataset contains handwritten digit images (0-9), and the model aims to classify them correctly. The challenge is to achieve high accuracy while maintaining efficiency.
+
+## Dataset
 
 Dataset: MNIST
 Size: 60,000 training images, 10,000 test images
