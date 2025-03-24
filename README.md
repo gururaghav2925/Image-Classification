@@ -13,6 +13,7 @@ Number of Classes: 10 (digits 0-9)
 Preprocessing: Normalization to [0,1] range
 
 ## Neural Network Model
+![Screenshot 2025-03-24 110708](https://github.com/user-attachments/assets/4be359c3-9ad3-4e92-b03d-8a1c66775ad0)
 
 
 
@@ -98,20 +99,23 @@ def train_model(model, train_loader, optimizer, criterion, num_epochs=3):
 ## OUTPUT
 ### Training Loss per Epoch
 
-Include the Training Loss per epoch
+![Screenshot 2025-03-24 102057](https://github.com/user-attachments/assets/2837f4b3-b786-4eea-989a-058c4acf5b22)
+
 
 ### Confusion Matrix
 
-Include confusion matrix here
+![Screenshot 2025-03-24 102157](https://github.com/user-attachments/assets/040c827d-200e-4894-906d-9d924d578c63)
+
 
 ### Classification Report
 
-Include Classification Report here
+![Screenshot 2025-03-24 102214](https://github.com/user-attachments/assets/42ccc2b4-0de5-4d9d-a109-5ae56660cb8c)
+
 
 
 ### New Sample Data Prediction
+![Screenshot 2025-03-24 102229](https://github.com/user-attachments/assets/4498207d-f252-4fd0-9413-ede2571d3529)
 
-Include your sample input and output 
 
 ## RESULT
 The CNN model was successfully trained on the MNIST dataset for 3 epochs, achieving a final loss of 0.1632, demonstrating effective handwritten digit classification.
