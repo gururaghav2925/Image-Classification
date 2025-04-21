@@ -8,7 +8,7 @@ To Develop a convolutional deep neural network for image classification and to v
 Develop a Convolutional Neural Network (CNN) to classify images into predefined categories. The dataset consists of labeled images split into training and testing sets, with preprocessing steps like resizing, normalization, and augmentation to enhance model performance. The trained model will be tested on new images to verify accuracy.
 
 ## Data set
-Dataset: MNIST.
+Dataset: MNIST. /br
 Size: 60,000 training images, 10,000 test images.
 Image Dimensions: 28 × 28 pixels, grayscale.
 Number of Classes: 10 (digits 0-9).
