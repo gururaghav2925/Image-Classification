@@ -5,7 +5,8 @@
 To Develop a convolutional deep neural network for image classification and to verify the response for new images.
 
 ## Problem Statement 
-The goal of this project is to develop a Convolutional Neural Network (CNN) for image classification using the MNIST dataset. The MNIST dataset contains handwritten digit images (0-9), and the model aims to classify them correctly. The challenge is to achieve high accuracy while maintaining efficiency.
+Develop a Convolutional Neural Network (CNN) to classify images into predefined categories. The dataset consists of labeled images split into training and testing sets, with preprocessing steps like resizing, normalization, and augmentation to enhance model performance. The trained model will be tested on new images to verify accuracy.
+
 ## Data set
 Dataset: MNIST
 Size: 60,000 training images, 10,000 test images
@@ -19,21 +20,40 @@ Preprocessing: Normalization to [0,1] range
 
 ## DESIGN STEPS
 
-### STEP 1: Problem Statement
-Define the objective of classifying handwritten digits (0-9) using a Convolutional Neural Network (CNN).
+### STEP 1:
+Import the necessary libraries such as NumPy, Matplotlib, and PyTorch.
 
-### STEP 2:Dataset Collection
-Use the MNIST dataset, which contains 60,000 training images and 10,000 test images of handwritten digits.
-### STEP 3: Data Preprocessing
-Convert images to tensors, normalize pixel values, and create DataLoaders for batch processing.
-### STEP 4:Model Architecture
-Design a CNN with convolutional layers, activation functions, pooling layers, and fully connected layers.
-### STEP 5:Model Training
-Train the model using a suitable loss function (CrossEntropyLoss) and optimizer (Adam) for multiple epochs.
-### STEP 6:Model Evaluation
-Test the model on unseen data, compute accuracy, and analyze results using a confusion matrix and classification report.
-### STEP 7: Model Deployment & Visualization
-Save the trained model, visualize predictions, and integrate it into an application if needed.
+### STEP 2:
+Load and preprocess the dataset:
+
+- Resize images to a fixed size (128×128).
+- Normalize pixel values to a range between 0 and 1.
+- Convert labels into numerical format if necessary.
+
+### STEP 3:
+Define the CNN Architecture, which includes:
+
+- Input Layer: Shape (8,128,128)
+- Convolutional Layer 1: 8 filters, kernel size (16×16), ReLU activation
+- Max-Pooling Layer 1: Pool size (2×2)
+- Convolutional Layer 2: 24 filters, kernel size (8×8), ReLU activation
+- Max-Pooling Layer 2: Pool size (2×2)
+- Fully Connected (Dense) Layer:
+   - First Dense Layer with 256 neurons
+   - Second Dense Layer with 128 neurons
+   - Output Layer for classification
+     
+### STEP 4:
+Define the loss function (e.g., Cross-Entropy Loss for classification) and optimizer (e.g., Adam or SGD).
+
+### STEP 5:
+Train the model by passing training data through the network, calculating the loss, and updating the weights using backpropagation.
+
+### STEP 6:
+Evaluate the trained model on the test dataset using accuracy, confusion matrix, and other performance metrics.
+
+### STEP 7:
+Make predictions on new images and analyze the results.
 
 
 ## PROGRAM
