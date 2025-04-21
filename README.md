@@ -9,7 +9,7 @@ Develop a Convolutional Neural Network (CNN) to classify images into predefined 
 
 
 ## Data set
-   * Dataset: MNIST.
+   * Dataset: Fashion MNIST.
    * Size: 60,000 training images, 10,000 test images.
    * Image Dimensions: 28 × 28 pixels, grayscale.
    * Number of Classes: 10 (digits 0-9).
